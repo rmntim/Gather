@@ -7,18 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		303270A92BE8C5EE0005500F /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303270A82BE8C5EE0005500F /* FeedView.swift */; };
+		303270AB2BE8C6280005500F /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303270AA2BE8C6280005500F /* MapView.swift */; };
+		303270AD2BE8C62E0005500F /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303270AC2BE8C62E0005500F /* ProfileView.swift */; };
 		30C515F52BE6492F00491033 /* GatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C515F42BE6492F00491033 /* GatherApp.swift */; };
 		30C515F72BE6492F00491033 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C515F62BE6492F00491033 /* ContentView.swift */; };
 		30C515F92BE6493000491033 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30C515F82BE6493000491033 /* Assets.xcassets */; };
 		30C515FC2BE6493000491033 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30C515FB2BE6493000491033 /* Preview Assets.xcassets */; };
+		30C5160A2BE64B8400491033 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C516092BE64B8400491033 /* TabBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		303270A82BE8C5EE0005500F /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		303270AA2BE8C6280005500F /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		303270AC2BE8C62E0005500F /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		30C515F12BE6492F00491033 /* Gather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30C515F42BE6492F00491033 /* GatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GatherApp.swift; sourceTree = "<group>"; };
 		30C515F62BE6492F00491033 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		30C515F82BE6493000491033 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30C515FB2BE6493000491033 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		30C516092BE64B8400491033 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +40,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		303270A52BE8C5BF0005500F /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				303270A82BE8C5EE0005500F /* FeedView.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		303270A62BE8C5C70005500F /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				303270AA2BE8C6280005500F /* MapView.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		303270A72BE8C5CE0005500F /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				303270AC2BE8C62E0005500F /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		30C515E82BE6492E00491033 = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +83,14 @@
 		30C515F32BE6492F00491033 /* Gather */ = {
 			isa = PBXGroup;
 			children = (
-				30C515F42BE6492F00491033 /* GatherApp.swift */,
+				30C516022BE64B1900491033 /* App */,
+				30C516032BE64B1E00491033 /* Core */,
+				30C516042BE64B2D00491033 /* Extensions */,
+				30C516052BE64B3100491033 /* Model */,
+				30C516062BE64B4400491033 /* Services */,
+				30C516072BE64B4700491033 /* Utils */,
 				30C515F62BE6492F00491033 /* ContentView.swift */,
+				30C515F42BE6492F00491033 /* GatherApp.swift */,
 				30C515F82BE6493000491033 /* Assets.xcassets */,
 				30C515FA2BE6493000491033 /* Preview Content */,
 			);
@@ -65,6 +103,60 @@
 				30C515FB2BE6493000491033 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		30C516022BE64B1900491033 /* App */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		30C516032BE64B1E00491033 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				303270A52BE8C5BF0005500F /* Feed */,
+				303270A62BE8C5C70005500F /* Map */,
+				303270A72BE8C5CE0005500F /* Profile */,
+				30C516082BE64B7700491033 /* TabBar */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		30C516042BE64B2D00491033 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		30C516052BE64B3100491033 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		30C516062BE64B4400491033 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		30C516072BE64B4700491033 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		30C516082BE64B7700491033 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				30C516092BE64B8400491033 /* TabBarView.swift */,
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +229,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				303270A92BE8C5EE0005500F /* FeedView.swift in Sources */,
 				30C515F72BE6492F00491033 /* ContentView.swift in Sources */,
+				303270AB2BE8C6280005500F /* MapView.swift in Sources */,
+				30C5160A2BE64B8400491033 /* TabBarView.swift in Sources */,
+				303270AD2BE8C62E0005500F /* ProfileView.swift in Sources */,
 				30C515F52BE6492F00491033 /* GatherApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
