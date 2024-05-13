@@ -11,4 +11,5 @@ struct Event: Identifiable, Hashable {
     let id: UUID = UUID()
     let name: String
     let date: Date
+    let imageUrl: String
 }
