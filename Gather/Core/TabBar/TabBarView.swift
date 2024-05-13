@@ -12,15 +12,15 @@ struct TabBarView: View {
         TabView {
             FeedView()
                 .tabItem {
-                    Label("Feed", systemImage: "list.dash")
+                    Image(systemName: "calendar")
                 }
            MapView()
                 .tabItem {
-                    Label("Map", systemImage: "map.fill")
+                    Image(systemName: "map.fill")
                 }
             ProfileView()
                 .tabItem {
-                    Label("Profile", systemImage: "person.fill")
+                    Image(systemName: "person.fill")
                 }
         }
     }
