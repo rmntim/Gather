@@ -12,15 +12,16 @@ struct TabBarView: View {
         TabView {
             FeedView()
                 .tabItem {
-                    Image(systemName: "calendar")
+                    // TODO: change label or icon so it matches
+                    Label("Feed", systemImage: "calendar")
                 }
            MapView()
                 .tabItem {
-                    Image(systemName: "map.fill")
+                    Label("Map", systemImage: "map.fill")
                 }
             ProfileView()
                 .tabItem {
-                    Image(systemName: "person.fill")
+                    Label("Profile", systemImage: "person.fill")
                 }
         }
     }
