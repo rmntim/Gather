@@ -24,6 +24,7 @@ struct TabBarView: View {
                     Label("Profile", systemImage: "person.fill")
                 }
         }
+        .tint(Color(.label))
     }
 }
 
