@@ -20,8 +20,8 @@ struct Post: Identifiable, Hashable {
 extension Post {
     static func mockData() -> [Post] {
         return [
-            .init(authorName: "Виктор", authorImageUrl: "https://xsgames.co/randomusers/avatar.php?g=male", publicationDate: Date.now, description: "Это было невероятно...", likes: 43, event: Event(name: "Feduk", date: Date.distantPast)),
-            .init(authorName: "Роман", authorImageUrl: "https://xsgames.co/randomusers/avatar.php?g=male", publicationDate: Date.now, description: "Я ебу что тут писать????", likes: 228, event: Event(name: "QUOK Genesis Tour", date: Date.now)),
+            .init(authorName: "Виктор", authorImageUrl: "https://xsgames.co/randomusers/avatar.php?g=male", publicationDate: Date.now, description: "Это было невероятно...", likes: 43, event: Event(name: "Feduk", date: Date.distantPast, imageUrl: "https://random.imagecdn.app/800/800")),
+            .init(authorName: "Роман", authorImageUrl: "https://xsgames.co/randomusers/avatar.php?g=male", publicationDate: Date.now, description: "Я ебу что тут писать????", likes: 228, event: Event(name: "QUOK Genesis Tour", date: Date.now, imageUrl: "https://random.imagecdn.app/800/800")),
         ]
     }
 }
