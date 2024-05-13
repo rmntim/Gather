@@ -17,6 +17,8 @@
 		30C5160A2BE64B8400491033 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C516092BE64B8400491033 /* TabBarView.swift */; };
 		30FAA7372BF265230069C921 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FAA7362BF265230069C921 /* PostModel.swift */; };
 		30FAA73A2BF266D10069C921 /* EventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FAA7392BF266D10069C921 /* EventModel.swift */; };
+		30FAA73C2BF2682D0069C921 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FAA73B2BF2682D0069C921 /* PostView.swift */; };
+		30FAA73E2BF268CC0069C921 /* FullPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FAA73D2BF268CC0069C921 /* FullPostView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		30C516092BE64B8400491033 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		30FAA7362BF265230069C921 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
 		30FAA7392BF266D10069C921 /* EventModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventModel.swift; sourceTree = "<group>"; };
+		30FAA73B2BF2682D0069C921 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		30FAA73D2BF268CC0069C921 /* FullPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullPostView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +52,8 @@
 			isa = PBXGroup;
 			children = (
 				303270A82BE8C5EE0005500F /* FeedView.swift */,
+				30FAA73B2BF2682D0069C921 /* PostView.swift */,
+				30FAA73D2BF268CC0069C921 /* FullPostView.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -258,7 +264,9 @@
 				30C5160A2BE64B8400491033 /* TabBarView.swift in Sources */,
 				303270AD2BE8C62E0005500F /* ProfileView.swift in Sources */,
 				30FAA7372BF265230069C921 /* PostModel.swift in Sources */,
+				30FAA73C2BF2682D0069C921 /* PostView.swift in Sources */,
 				30C515F52BE6492F00491033 /* GatherApp.swift in Sources */,
+				30FAA73E2BF268CC0069C921 /* FullPostView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
